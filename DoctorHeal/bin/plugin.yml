@@ -1,0 +1,7 @@
+main: me.andreisava4.DoctorHeal.Main
+name: DoctorHeal
+version: 1.0
+author: andreisava4
+
+commands: 
+  Doctor: 
