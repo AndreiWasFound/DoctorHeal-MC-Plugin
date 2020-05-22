@@ -39,6 +39,8 @@ public class Heal implements CommandExecutor {
 			// /doctor healme
 			if (args[0].equalsIgnoreCase("healme")) {
 				player.setHealth(20.0);
+				player.getFoodLevel();
+				player.setFoodLevel((int) 20.0);
 				Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "doctor" + player.getName());
 				player.sendMessage(ChatColor.GREEN + "You've been healed!");
 				return true;
